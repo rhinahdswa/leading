@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夜遇AI - 不迷路</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: #F0F0F0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px 40px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            margin-top: 60px;
+            width: 90%;
+            max-width: 420px;
+        }
+        .logo {
+            position: absolute;
+            top: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+        .logo svg {
+            width: 70px;
+            height: auto;
+        }
+        h1 {
+            color: #1a1a2e;
+            font-size: 1.8em;
+            margin-top: 65px;
+            margin-bottom: 8px;
+        }
+        .desc {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+        .links a {
+            display: block;
+            margin: 12px 0;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+        }
+        .links a:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+                <text x="50" y="40" font-family="'Ma Shan Zheng', cursive, serif" font-size="42" fill="#ffffff" text-anchor="middle">夜遇</text>
+            </svg>
+        </div>
+        <h1>夜遇AI · 不迷路</h1>
+        <p class="desc">以下是备用网站链接，防止网站无法访问：</p>
+        <div class="links">
+            <a id="link1" href="https://yeyu.pro" target="_blank">夜遇AI - 节点1</a>
+            <a id="link2" href="https://yeyu.io" target="_blank">夜遇AI - 节点2</a>
+            <a id="link3" href="https://deepsese.net" target="_blank">夜遇AI - 节点3</a>
+            <a id="link4" href="https://51wan.ai" target="_blank">夜遇AI - 节点4</a>
+            <a id="link5" href="https://91wan.ai" target="_blank">夜遇AI - 节点5</a>
+        </div>
+    </div>
+    <script>
+        // 支持 ref_id 推荐链接
+        const params = new URLSearchParams(window.location.search);
+        const refId = params.get('ref_id');
+        if (refId) {
+            document.querySelectorAll('.links a').forEach(link => {
+                const url = new URL(link.href);
+                url.pathname = '/signup';
+                url.searchParams.set('ref_id', refId);
+                link.href = url.toString();
+            });
+        }
+    </script>
+</body>
+</html>
