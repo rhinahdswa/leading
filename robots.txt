@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rhinahdswa.github.io/leading/sitemap.xml

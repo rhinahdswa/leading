@@ -3,107 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>夜遇AI - 不迷路</title>
+    <title>夜遇AI不迷路</title>
+    <meta name="description" content="夜遇AI官方导航页，AI风月平替，最好用的AI角色聊天平台">
+    <meta name="keywords" content="夜遇AI,AI风月平替,AI聊天,AI角色,AI女友">
+    <meta property="og:title" content="夜遇AI不迷路">
+    <meta property="og:description" content="夜遇AI官方导航页，AI风月平替，最好用的AI角色聊天平台">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhinahdswa.github.io/leading/">
+    <link rel="canonical" href="https://rhinahdswa.github.io/leading/">
+    <link rel="icon" href="https://yeyu.ai/favicon.ico">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "夜遇AI",
+      "alternateName": ["夜遇", "YeYu AI"],
+      "url": "https://yeyu.ai",
+      "description": "夜遇AI - 最好用的AI角色聊天平台，AI风月平替"
+    }
+    </script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            background-color: #F0F0F0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            padding: 20px;
         }
         .container {
             text-align: center;
-            background-color: white;
-            padding: 20px 40px 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            position: relative;
-            margin-top: 60px;
-            width: 90%;
-            max-width: 420px;
+            max-width: 400px;
+            width: 100%;
         }
         .logo {
-            position: absolute;
-            top: -55px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
-        }
-        .logo svg {
-            width: 70px;
-            height: auto;
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
         h1 {
-            color: #1a1a2e;
-            font-size: 1.8em;
-            margin-top: 65px;
-            margin-bottom: 8px;
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
-        .desc {
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 20px;
+        .subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-bottom: 32px;
         }
-        .links a {
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .link {
             display: block;
-            margin: 12px 0;
-            padding: 12px 20px;
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            color: #fff;
             text-decoration: none;
-            color: white;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            border-radius: 8px;
-            font-size: 1em;
+            font-size: 16px;
             font-weight: 500;
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
         }
-        .links a:hover {
+        .link:hover {
+            background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
-        .links a:active {
-            transform: translateY(0);
+        .link.primary {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border: none;
+        }
+        .link.primary:hover {
+            background: linear-gradient(135deg, #7c7ff2 0%, #9d6ff7 100%);
+        }
+        .footer {
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
-                <text x="50" y="40" font-family="'Ma Shan Zheng', cursive, serif" font-size="42" fill="#ffffff" text-anchor="middle">夜遇</text>
-            </svg>
-        </div>
-        <h1>夜遇AI · 不迷路</h1>
-        <p class="desc">以下是备用网站链接，防止网站无法访问：</p>
+        <img src="https://yeyu.ai/favicon.ico" alt="夜遇AI Logo" class="logo" onerror="this.style.display='none'">
+        <h1>夜遇AI不迷路</h1>
+        <p class="subtitle">以下是备用网站链接，防止网站无法访问：</p>
         <div class="links">
-            <a id="link1" href="https://yeyu.pro" target="_blank">夜遇AI - 节点1</a>
-            <a id="link2" href="https://yeyu.io" target="_blank">夜遇AI - 节点2</a>
-            <a id="link3" href="https://deepsese.net" target="_blank">夜遇AI - 节点3</a>
-            <a id="link4" href="https://51wan.ai" target="_blank">夜遇AI - 节点4</a>
-            <a id="link5" href="https://91wan.ai" target="_blank">夜遇AI - 节点5</a>
+            <a href="https://yeyu.ai" class="link primary">夜遇AI - 主站</a>
+            <a href="https://yeyu.pro" class="link">夜遇AI - 节点2</a>
+            <a href="https://yeyu.io" class="link">夜遇AI - 节点3</a>
+            <a href="https://deepsese.net" class="link">夜遇AI - 节点4</a>
+            <a href="https://51wan.ai" class="link">夜遇AI - 节点5</a>
+            <a href="https://91wan.ai" class="link">夜遇AI - 节点6</a>
         </div>
+        <p class="footer">© 2024 夜遇AI - AI风月平替</p>
     </div>
-    <script>
-        // 支持 ref_id 推荐链接
-        const params = new URLSearchParams(window.location.search);
-        const refId = params.get('ref_id');
-        if (refId) {
-            document.querySelectorAll('.links a').forEach(link => {
-                const url = new URL(link.href);
-                url.pathname = '/signup';
-                url.searchParams.set('ref_id', refId);
-                link.href = url.toString();
-            });
-        }
-    </script>
 </body>
 </html>
